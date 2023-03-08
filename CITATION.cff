@@ -1,0 +1,26 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: PyomoOptimization
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Alireza
+    family-names: Soroudi
+    email: alireza.soroudi@gmail.com
+    name-particle: Alireza
+    orcid: 'https://orcid.org/0000-0002-3651-6290'
+identifiers:
+  - type: url
+    value: 'https://github.com/OptimizationExpert/Pyomo'
+    description: Pyomo repository
+repository-code: 'https://github.com/OptimizationExpert/Pyomo'
+url: >-
+  https://www.linkedin.com/newsletters/optimization-in-open-source-6874020019009859585/
+keywords:
+  - Pyomo
+  - Optimization
+license: MIT
