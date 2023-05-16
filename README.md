@@ -47,5 +47,7 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 
 * [Vertex coloring](https://github.com/OptimizationExpert/Pyomo/blob/main/vertexcoloring.ipynb) 
 
-* [Easter photo arrangement](https://github.com/OptimizationExpert/Pyomo/blob/main/Easter%20Photo.ipynb) 
+* [Easter photo arrangement](https://github.com/OptimizationExpert/Pyomo/blob/main/Easter%20Photo.ipynb)
+ 
+* [Student - Prof assignment](https://github.com/OptimizationExpert/Pyomo/blob/main/StudenttoProf.ipynb)
 
