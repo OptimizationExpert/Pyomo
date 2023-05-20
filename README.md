@@ -5,8 +5,6 @@ The examples are provided in the form of Jupyter notebooks, which include a desc
 The repository is open for contributions, so users can add their own examples or improve existing ones. Users can also fork the repository and use the examples as a starting point for their own optimization problems.
 This repository is a resource for anyone interested in learning how to use Pyomo for modeling and solving optimization problems in the areas of supply chain management and power systems. The examples provide a practical and hands-on approach to learning the Pyomo environment, and the Jupyter notebooks make it easy to follow along and replicate the examples. The repository is also a great way to collaborate with others in the optimization community and to share knowledge and expertise.
 
-git clone https://github.com/your-username/pyomo-examples.git
-
 
 # LinkedIn Newsletter 
 
