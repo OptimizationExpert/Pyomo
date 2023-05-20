@@ -52,3 +52,16 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 * [Student - Prof assignment](https://github.com/OptimizationExpert/Pyomo/blob/main/StudenttoProf.ipynb)
 
 
+# Contributing
+We welcome contributions from the community to improve this repository and make it a more valuable resource for all users. If you'd like to contribute, please follow these guidelines:
+
+Fork the repository and create a new branch for your contribution.
+
+Make your changes, keeping the following best practices in mind:
+
+Write clean and readable code.
+Include detailed explanations and comments.
+Ensure the notebooks run without errors.
+Test your changes to verify their correctness and effectiveness.
+
+Submit a pull request, clearly describing the changes you've made and providing any relevant context.
