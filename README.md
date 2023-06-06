@@ -51,6 +51,10 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 
 * [Student - Prof assignment](https://github.com/OptimizationExpert/Pyomo/blob/main/StudenttoProf.ipynb)
 
+* [Knight's Tour](https://github.com/OptimizationExpert/Pyomo/blob/main/Knight%20tour%20MILP.ipynb)
+
+
+
 
 # Contributing
 We welcome contributions from the community to improve this repository and make it a more valuable resource for all users. If you'd like to contribute, please follow these guidelines:
