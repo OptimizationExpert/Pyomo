@@ -55,7 +55,11 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 
 * [Multi-curve Regression](https://github.com/OptimizationExpert/Pyomo/blob/a8c849b7e40017e54bebdaecc6f47d5c8d7a7017/regression-multiline-V4.ipynb) 
 
-* [Number-link](https://github.com/OptimizationExpert/Pyomo/blob/main/Numberlink-V3-Git.ipynb) 
+* [Number-link](https://github.com/OptimizationExpert/Pyomo/blob/main/Numberlink-V3-Git.ipynb)
+
+* [Conquering all metro stations](https://github.com/OptimizationExpert/Pyomo/blob/main/Metro%20map%20-V3-github.ipynb)
+
+
 
 
 
