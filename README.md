@@ -59,6 +59,7 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 
 * [Conquering all metro stations](https://github.com/OptimizationExpert/Pyomo/blob/main/Metro%20map%20-V3-github.ipynb)
 
+* [Hidato puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/Hidato-git.ipynb)
 
 
 
