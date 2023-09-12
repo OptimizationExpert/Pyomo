@@ -63,9 +63,9 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 
 * [Hashi puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/HAshi%20puzzle-git.ipynb)
 
+* [Bonairo puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/Bonairo%20puzzle%20.ipynb)
 
-
-
+  
 
 
 # Contributing
