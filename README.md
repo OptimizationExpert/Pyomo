@@ -65,6 +65,10 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 
 * [Bonairo puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/Bonairo%20puzzle%20.ipynb)
 
+* [Shikaku puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/Shikaku-puzzle-github.ipynb)
+
+
+
   
 
 
