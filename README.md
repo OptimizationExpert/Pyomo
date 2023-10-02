@@ -73,6 +73,8 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 
 * [Shikaku puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/Shikaku-puzzle-github.ipynb)
 
+* [Magic Square puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/MagicSquare.ipynb)
+
 
 
   
