@@ -75,6 +75,9 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 
 * [Magic Square puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/MagicSquare.ipynb)
 
+* [Monochrome Rectangle puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/vertex_rectangle.ipynb)
+
+
 
 
   
