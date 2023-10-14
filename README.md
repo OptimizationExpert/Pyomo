@@ -17,11 +17,13 @@ In this repository, you'll discover a collection of Jupyter notebooks, each tack
 https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=6874020019009859585 
 #linearprogramming
 
+# Telegram Channel ---> https://t.me/PyomoChannel
+
+
 # Udemy training course
 discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=36C6F6B228A087695AD9
 
 # Solved Projects  
-*** Telegram Channel ---> https://t.me/PyomoChannel
 
 * [Pyomo on Neos Server](https://github.com/OptimizationExpert/Pyomo/blob/main/NEOS%20Pyomo.ipynb )
 
