@@ -21,7 +21,7 @@ https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=687402001900
 discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=36C6F6B228A087695AD9
 
 # Solved Projects  
-***
+*** Telegram Channel ---> https://t.me/PyomoChannel
 
 * [Pyomo on Neos Server](https://github.com/OptimizationExpert/Pyomo/blob/main/NEOS%20Pyomo.ipynb )
 
