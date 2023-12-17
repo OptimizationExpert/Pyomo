@@ -40,7 +40,7 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [Christmas gift](https://github.com/OptimizationExpert/Pyomo/blob/main/Gift-Christmas.ipynb) | [Shikaku puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/Shikaku-puzzle-github.ipynb) |
 | [Graph island detection](https://github.com/OptimizationExpert/Pyomo/blob/main/Graph-Island.ipynb) | [Magic Square puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/MagicSquare.ipynb) |
 | [Longest common sequence](https://github.com/OptimizationExpert/Pyomo/blob/main/LCS-git.ipynb) | [Monochrome Rectangle puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/vertex_rectangle.ipynb) | 
-| [Bilevel Optimization in Pyomo](https://github.com/OptimizationExpert/Pyomo/blob/main/bilevel-github-single-bilevel-multi-EX2.ipynb) | |
+| [Bilevel Optimization in Pyomo](https://github.com/OptimizationExpert/Pyomo/blob/main/bilevel-github-single-bilevel-multi-EX2.ipynb) | ddd |
 | [AddCircuit](https://github.com/OptimizationExpert/Pyomo/blob/main/AddCircuit_Advanced_CP.ipynb) | |
 # Contributing Guidelines
 We encourage contributions to make this repository even more valuable. If you'd like to contribute, please follow these guidelines:
