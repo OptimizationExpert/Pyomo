@@ -42,6 +42,10 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [Longest common sequence](https://github.com/OptimizationExpert/Pyomo/blob/main/LCS-git.ipynb) | [Monochrome Rectangle puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/vertex_rectangle.ipynb) | 
 | [Bilevel Optimization in Pyomo](https://github.com/OptimizationExpert/Pyomo/blob/main/bilevel-github-single-bilevel-multi-EX2.ipynb) | [AddCircuit](https://github.com/OptimizationExpert/Pyomo/blob/main/AddCircuit_Advanced_CP.ipynb) |
 | [15Puzzle IBM Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/15_Puzzle_IBM_Git.ipynb) | [Secret Santa](https://github.com/OptimizationExpert/Pyomo/blob/main/Secret_Santa_Circuit_Advanced_CP.ipynb) |
+| [Family Riddle Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/Project_Family_Advanced_CP.ipynb) | [XXXXXX] |
+
+
+
 # Contributing Guidelines
 
 
