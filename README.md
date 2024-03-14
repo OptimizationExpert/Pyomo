@@ -44,6 +44,9 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [15Puzzle IBM Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/15_Puzzle_IBM_Git.ipynb) | [Secret Santa](https://github.com/OptimizationExpert/Pyomo/blob/main/Secret_Santa_Circuit_Advanced_CP.ipynb) |
 | [Family Riddle Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/Project_Family_Advanced_CP.ipynb) |  [TSP with precedence](https://github.com/OptimizationExpert/Pyomo/blob/main/precedence_AddCircuit_Advanced_CP.ipynb) |
 
+* [Knight's tour](https://github.com/OptimizationExpert/Pyomo/blob/main/StudenttoProf.ipynb)
+
+
 
 
 # Contributing Guidelines
