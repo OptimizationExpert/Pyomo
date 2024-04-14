@@ -44,6 +44,9 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [15Puzzle IBM Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/15_Puzzle_IBM_Git.ipynb) | [Secret Santa](https://github.com/OptimizationExpert/Pyomo/blob/main/Secret_Santa_Circuit_Advanced_CP.ipynb) |
 | [Family Riddle Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/Project_Family_Advanced_CP.ipynb) |  [TSP with precedence](https://github.com/OptimizationExpert/Pyomo/blob/main/precedence_AddCircuit_Advanced_CP.ipynb) |
 | [Prime number IBM Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/Prime_IBM_sequence_March2024.ipynb) | [Movie Shooring Sequence](https://github.com/OptimizationExpert/Pyomo/blob/main/Movie_shooting.ipynb) |
+| [Master mind game CP & Pyomo](https://github.com/OptimizationExpert/Pyomo/blob/main/game_Master_Mind_CP_Pyomo.ipynb) | []() |
+
+
 
 
 
