@@ -45,7 +45,7 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [Family Riddle Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/Project_Family_Advanced_CP.ipynb) |  [TSP with precedence](https://github.com/OptimizationExpert/Pyomo/blob/main/precedence_AddCircuit_Advanced_CP.ipynb) |
 | [Prime number IBM Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/Prime_IBM_sequence_March2024.ipynb) | [Movie Shooring Sequence](https://github.com/OptimizationExpert/Pyomo/blob/main/Movie_shooting.ipynb) |
 | [Master mind game CP & Pyomo](https://github.com/OptimizationExpert/Pyomo/blob/main/game_Master_Mind_CP_Pyomo.ipynb) | [Optimal order pickup from inventory (CP) ](https://github.com/OptimizationExpert/Pyomo/blob/main/storage_routing.ipynb) |
-| [SUguru Puzzle CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/Suguru_CP.ipynb) |  |[Shape Palacement CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/shape_placement.ipynb) | 
+| [SUguru Puzzle CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/Suguru_CP.ipynb) | [Shape Palacement CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/shape_placement.ipynb) | 
 
 
 
