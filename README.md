@@ -46,7 +46,7 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [Prime number IBM Challenge](https://github.com/OptimizationExpert/Pyomo/blob/main/Prime_IBM_sequence_March2024.ipynb) | [Movie Shooring Sequence](https://github.com/OptimizationExpert/Pyomo/blob/main/Movie_shooting.ipynb) |
 | [Master mind game CP & Pyomo](https://github.com/OptimizationExpert/Pyomo/blob/main/game_Master_Mind_CP_Pyomo.ipynb) | [Optimal order pickup from inventory (CP) ](https://github.com/OptimizationExpert/Pyomo/blob/main/storage_routing.ipynb) |
 | [SUguru Puzzle CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/Suguru_CP.ipynb) | [Shape Palacement CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/shape_placement.ipynb) | 
-| [CVRP CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/CP_VRP.ipynb) | [ ]() | 
+| [CVRP CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/CP_VRP.ipynb) | [Stable Marriage CP](https://github.com/OptimizationExpert/Pyomo/blob/main/stable_marriage_CP.ipynb) | 
 
 
 # Contributing Guidelines
