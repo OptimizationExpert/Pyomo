@@ -49,6 +49,9 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [CVRP CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/CP_VRP.ipynb) | [Stable Marriage CP](https://github.com/OptimizationExpert/Pyomo/blob/main/stable_marriage_CP.ipynb) | 
 | [Largest_box_CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/Largest_box_CP.ipynb) | []() | 
 
+* [Knight's tour](https://github.com/OptimizationExpert/Pyomo/blob/main/StudenttoProf.ipynb)
+
+
 
 
 
