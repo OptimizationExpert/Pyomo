@@ -48,6 +48,8 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [SUguru Puzzle CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/Suguru_CP.ipynb) | [Shape Palacement CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/shape_placement.ipynb) | 
 | [CVRP CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/CP_VRP.ipynb) | [Stable Marriage CP](https://github.com/OptimizationExpert/Pyomo/blob/main/stable_marriage_CP.ipynb) | 
 | [Largest_box_CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/Largest_box_CP.ipynb) |  [Linkedin Tango_CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/TANGO_of_Linkedin_CP_Puzzle.ipynb)  | 
+| [GerryMandering CP](https://github.com/OptimizationExpert/Pyomo/blob/main/Final_Gerrymandering_CP.ipynb) | []() | 
+
 
 
 
