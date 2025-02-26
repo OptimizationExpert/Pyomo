@@ -50,6 +50,9 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [Largest_box_CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/Largest_box_CP.ipynb) |  [Linkedin Tango_CP ](https://github.com/OptimizationExpert/Pyomo/blob/main/TANGO_of_Linkedin_CP_Puzzle.ipynb)  | 
 | [GerryMandering CP](https://github.com/OptimizationExpert/Pyomo/blob/main/Final_Gerrymandering_CP.ipynb) | []() | 
 
+* [Knight's tour](https://github.com/OptimizationExpert/Pyomo/blob/main/StudenttoProf.ipynb)
+
+
 
 
 
