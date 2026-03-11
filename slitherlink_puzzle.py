@@ -77,7 +77,7 @@ for (i, j), v in U.items():
         if solver.value(v) + solver.value(U[j, i]) == 1:
             plt.plot([x0, x1], [y0, y1], c='r', lw=2)
         else:
-            plt.plot([x0, x1], [y0, y1], c='k', lw=2, alpha=0.5)
+            plt.plot([x0, x1], [y0, y1], c='k', lw=0.5, alpha=0.5)
 
 plt.tight_layout()
 plt.axis('off')
