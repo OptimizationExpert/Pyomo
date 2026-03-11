@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from ortools.sat.python import cp_model  # CP-SAT solver
 from base import Node, Cell
 from tools import make_data, dist, neighbour
+
 """
 Slitherlink (also known as Fences and Loop the Loop) is a logic puzzle with simple rules and challenging solutions.
 The rules are simple. You have to draw lines between the dots to form a single loop without crossings or branches. The numbers indicate how many lines surround it.
@@ -21,7 +22,6 @@ rows = data_dict["rows"]
 cols = data_dict["cols"]
 nodes = data_dict["nodes"]
 cells = data_dict["cells"]
-
 
 cells_all = []
 nodes_all = []
@@ -42,7 +42,7 @@ for i, c in cells.items():
              )
     )
 
-plt.figure()
+plt.figure(figsize=(10, 8))
 for n in nodes_all:
     x, y = n.position
     plt.scatter(x, y, s=5, c='k')
@@ -80,11 +80,21 @@ for (i, j), v in U.items():
     if i > j:
         x0, y0 = node_by_id[i].position
         x1, y1 = node_by_id[j].position
+        plt.plot([x0, x1], [y0, y1], c='k', lw=0.5, alpha=0.5)
+plt.tight_layout()
+plt.axis('off')
+plt.savefig('base_slitherlink.png')
+for (i, j), v in U.items():
+    if i > j:
+        x0, y0 = node_by_id[i].position
+        x1, y1 = node_by_id[j].position
         if solver.value(v) + solver.value(U[j, i]) == 1:
-            plt.plot([x0, x1], [y0, y1], c='r', lw=2)
+            plt.plot([x0, x1], [y0, y1], c='r', lw=3)
         else:
             plt.plot([x0, x1], [y0, y1], c='k', lw=0.5, alpha=0.5)
 
 plt.tight_layout()
 plt.axis('off')
+plt.savefig('final_slitherlink.png')
+
 plt.show()
