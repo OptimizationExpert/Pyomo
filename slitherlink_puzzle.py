@@ -3,6 +3,12 @@ import matplotlib.pyplot as plt
 from ortools.sat.python import cp_model  # CP-SAT solver
 from base import Node, Cell
 from tools import make_data, dist, neighbour
+"""
+Slitherlink (also known as Fences and Loop the Loop) is a logic puzzle with simple rules and challenging solutions.
+The rules are simple. You have to draw lines between the dots to form a single loop without crossings or branches. The numbers indicate how many lines surround it.
+
+Solved by alireza.soroudi@gmail.com
+"""
 
 file_name = "test5.txt"
 file_name = "test30x45.txt"
