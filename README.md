@@ -51,6 +51,9 @@ discount coupon https://www.udemy.com/course/optimization-in-python/?couponCode=
 | [GerryMandering CP](https://github.com/OptimizationExpert/Pyomo/blob/main/Final_Gerrymandering_CP.ipynb) | [ROGO Puzzle](https://github.com/OptimizationExpert/Pyomo/blob/main/ROGO_of_AddCircuit_Advanced_CP.ipynb) | 
 | [SlitherLink CP](https://github.com/OptimizationExpert/Pyomo/blob/main/slitherlink_puzzle.py) | [ Puzzle] | 
 
+* [Knight's tour](https://github.com/OptimizationExpert/Pyomo/blob/main/StudenttoProf.ipynb)
+
+
 
 
 
