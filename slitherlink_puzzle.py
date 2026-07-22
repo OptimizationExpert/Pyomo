@@ -13,7 +13,7 @@ Solved by alireza.soroudi@gmail.com
 
 file_name = "test5.txt"
 file_name = "test30x45.txt"
-file_name = "test30x20.txt"
+#file_name = "test30x20.txt"
 with open(file_name, "r") as f:
     puzzle_text = f.read().strip()  # keeps newlines, removes leading/trailing whitespace
 
@@ -45,14 +45,14 @@ for i, c in cells.items():
 plt.figure(figsize=(10, 8))
 for n in nodes_all:
     x, y = n.position
-    plt.scatter(x, y, s=5, c='k')
+    plt.scatter(x, y, s=20, c='k')
 for c in cells_all:
     x, y = c.position
     nodes_in_cell = [n.name for n in c.nodes]
     xm = sum([node.position[0] for node in c.nodes]) / len(c.nodes)
     ym = -0.2 + sum([node.position[1] for node in c.nodes]) / len(c.nodes)
     if c.value:
-        plt.text(xm, ym, s=str(c.value), fontsize=8)
+        plt.text(xm, ym, s=str(c.value), fontsize=8, fontweight='bold')
 
 model = cp_model.CpModel()
 solver = cp_model.CpSolver()
@@ -80,10 +80,11 @@ for (i, j), v in U.items():
     if i > j:
         x0, y0 = node_by_id[i].position
         x1, y1 = node_by_id[j].position
-        plt.plot([x0, x1], [y0, y1], c='k', lw=0.5, alpha=0.5)
+        plt.plot([x0, x1], [y0, y1], '--k', lw=0.5, alpha=0.5)
 plt.tight_layout()
 plt.axis('off')
 plt.savefig('base_slitherlink.png')
+
 for (i, j), v in U.items():
     if i > j:
         x0, y0 = node_by_id[i].position
