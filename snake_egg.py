@@ -1,3 +1,15 @@
+"""
+Developed by Alireza Soroudi
+alireza.soroudi@gmail.com
+The Snake: Draws a continuous path moving up, down, left, or right between cells.
+The head and tail start at marked circular cells.
+The snake cannot touch itself straight-on (orthogonally), but can touch diagonally,
+ and cannot revisit squares.
+The Eggs: The empty cells left over outside the snake form distinct, connected groups (eggs).
+Sizes: These groups match a precise set of sizes sequentially
+(such as one of each size from 1 to N-1 in standard large grids).
+"""
+
 import matplotlib.pyplot as plt
 from ortools.sat.python import cp_model
 
