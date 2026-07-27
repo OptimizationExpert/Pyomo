@@ -6,10 +6,9 @@ data and some functions related to data is taken from https://github.com/niloufa
 is a classic Japanese-style logic puzzle where you fill an N×N grid with buildings of varying heights, using only the edge clues and pure deduction — no guessing required. Every row and every column contains each height from 1 to N exactly once, and the numbers around the perimeter tell you how many buildings are visible from that side.
 """
 
-import matplotlib.pyplot as plt
-from ortools.sat.python import cp_model
-
 import re
+
+from ortools.sat.python import cp_model
 
 PUZZLE = """
    5  4  2  3  1  2  3  4  4
@@ -32,12 +31,14 @@ PUZZLE = """
 2 [2, 1, 3] 1
    2  3  1"""
 
-PUZZLE= """3  2  1  2
+PUZZLE = """3  2  1  2
 3 [1, 3, 4, 2] 2
 2 [3, 1, 2, 4] 1
 2 [2, 4, 1, 3] 2
 1 [4, 2, 3, 1] 3
    1  2  2  3"""
+
+
 def parse_skyscrapers(text):
     """-> (grid, clues) where clues has keys 'top','bottom','left','right'."""
     lines = [ln for ln in text.strip().splitlines() if ln.strip()]
