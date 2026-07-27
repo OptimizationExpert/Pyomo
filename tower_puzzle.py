@@ -32,7 +32,12 @@ PUZZLE = """
 2 [2, 1, 3] 1
    2  3  1"""
 
-
+PUZZLE= """3  2  1  2
+3 [1, 3, 4, 2] 2
+2 [3, 1, 2, 4] 1
+2 [2, 4, 1, 3] 2
+1 [4, 2, 3, 1] 3
+   1  2  2  3"""
 def parse_skyscrapers(text):
     """-> (grid, clues) where clues has keys 'top','bottom','left','right'."""
     lines = [ln for ln in text.strip().splitlines() if ln.strip()]
@@ -146,16 +151,6 @@ for d in ['left', 'right']:
 
 status = solver.Solve(model)
 print(solver.status_name(status))
-plt.figure()
-for c in cells:
-    plt.scatter(grid[c][0], grid[c][1], s=100, c='grey', alpha=0.3)
-    val = solver.value(u[c])
-    plt.text(grid[c][0], grid[c][1], s=str(val))
-    # plt.text(grid[c][0] - 0.2, grid[c][1], s=f"{c}-({grid[c][0]},{grid[c][1]})", c='r')
-
-plt.axis('off')
-plt.tight_layout()
-plt.show()
 
 import matplotlib.pyplot as plt
 import numpy as np
