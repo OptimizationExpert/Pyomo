@@ -104,3 +104,29 @@ for (i, j), v in x.items():
 plt.axis('off')
 plt.tight_layout()
 plt.show()
+
+
+
+plt.figure(figsize=(5, 5))
+
+for n, (r, c, v) in dic_data.items():
+    bias = 0.5 * col_max + 0.5 - 0.5 * r
+    plt.scatter(bias + c, rowmax - r, s=220, c='grey', alpha=0.4, zorder=0)
+    plt.text(bias + c - 0.2, rowmax - r - 0.1, s=str(v), fontweight='bold')
+plt.axis('off')
+plt.tight_layout()
+
+for r in rows:
+    for (i, j), v in x.items():
+        if solver.Value(v) > 0:
+            r0, c0, v0 = dic_data[i]
+            r1, c1, v1 = dic_data[j]
+            bias0 = 0.5 * col_max + 0.5 - 0.5 * r0
+            bias1 = 0.5 * col_max + 0.5 - 0.5 * r1
+
+            x0, y0 = bias0 + c0, rowmax - r0
+            x1, y1 = bias1 + c1, rowmax - r1
+            if r0==r:
+                plt.plot([x0, x1], [y0, y1], lw=3, color='r', zorder=1)
+                plt.savefig(f"row {r}.png")
+plt.show()
