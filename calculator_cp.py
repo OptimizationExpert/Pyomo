@@ -2,10 +2,14 @@
 Developed by Alireza Soroudi
 alireza.soroudi@gmail.com
 optexpert.org
+The puzzle is taken from : https://dmcommunity.org/challenges/2020-11-calculator-two-buttons/
+A calculator, initially displaying 0, has only two buttons: ”+” adds 1 to the number on display, and ”×” multiplies the number on display by 10.
 
+What is the least number of button presses needed to show 5034? And how would you make sure your solution is actually optimal, not just a good guess? (Puzzle courtesy of Hakan Kjellerstrand.)
 """
-from ortools.sat.python import cp_model # CP-SAT solver
+from ortools.sat.python import cp_model  # CP-SAT solver
 import matplotlib.pyplot as plt
+
 
 def min_ops_sequence(target):
     max_steps = 50
@@ -95,6 +99,8 @@ def plot_many(targets):
 
 
 if __name__ == "__main__":
-  def primes_between(a, b):
-    return [n for n in range(a, b + 1) if n > 1 and all(n % d for d in range(2, int(n**0.5) + 1))]
-  plot_many(primes_between(900, 1000))
+    def primes_between(a, b):
+        return [n for n in range(a, b + 1) if n > 1 and all(n % d for d in range(2, int(n ** 0.5) + 1))]
+
+
+    plot_many(primes_between(900, 1000))
