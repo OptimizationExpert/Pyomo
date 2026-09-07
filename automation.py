@@ -90,4 +90,3 @@ if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
     for i in range(num_nurses):
         row = " | ".join(str(solver.Value(x[i, j])) for j in range(num_days))
         print(f"Nurse {i + 1}: {row}")
-

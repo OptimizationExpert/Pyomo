@@ -43,7 +43,6 @@ for h in Houses:
     expr_drink = [x_drink[h, d] for d in categories["drinks"]]
     model.add_exactly_one(expr_drink)
 
-
 for c in categories["colors"]:
     model.add_exactly_one([x_color[h, c] for h in Houses])
 for n in categories["nationalities"]:
@@ -66,15 +65,15 @@ for h in Houses:
     model.add(x_smoke[h, "Lucky Strike"] == x_drink[h, "Orange Juice"])
     model.add(x_smoke[h, "Parliaments"] == x_nationality[h, "Japanese"])
     h_index = Houses.index(h)
-    xpcolor, xncolor = 0,0
-    xphorse, xnhorse = 0,0
-    xpfox, xnfox = 0,0
+    xpcolor, xncolor = 0, 0
+    xphorse, xnhorse = 0, 0
+    xpfox, xnfox = 0, 0
     if h_index + 1 < len(Houses):
         hp = Houses[h_index + 1]
         xpcolor = x_color[hp, 'Blue']
         xphorse = x_pets[hp, 'Horse']
         xpfox = x_pets[hp, 'Fox']
-        model.add(x_color[hp, 'Green']==x_color[h, 'Ivory'])
+        model.add(x_color[hp, 'Green'] == x_color[h, 'Ivory'])
 
     if h_index - 1 >= 0:
         hn = Houses[h_index - 1]
@@ -83,10 +82,10 @@ for h in Houses:
         xnhorse = x_pets[hn, 'Horse']
         xnfox = x_pets[hn, 'Fox']
 
-    model.add(x_color["h5", 'Ivory']==0)
-    model.add(xpcolor+xncolor >= 1).only_enforce_if(x_nationality[h, "Norwegian"])
-    model.add(xphorse+xnhorse >= 1).only_enforce_if(x_smoke[h, "Kools"])
-    model.add(xpfox+xnfox >= 1).only_enforce_if(x_smoke[h, "Chesterfields"])
+    model.add(x_color["h5", 'Ivory'] == 0)
+    model.add(xpcolor + xncolor >= 1).only_enforce_if(x_nationality[h, "Norwegian"])
+    model.add(xphorse + xnhorse >= 1).only_enforce_if(x_smoke[h, "Kools"])
+    model.add(xpfox + xnfox >= 1).only_enforce_if(x_smoke[h, "Chesterfields"])
 
 model.add(x_drink["h3", "Milk"] == True)
 model.add(x_nationality["h1", "Norwegian"] == True)
@@ -95,12 +94,11 @@ solver = cp_model.CpSolver()
 results = solver.Solve(model)
 print(solver.status_name(results))
 
-
 for h in Houses:
-    KOLOR = [c for c in categories["colors"] if solver.Value(x_color[h, c])>0][0]
-    national = [n for n in categories["nationalities"] if solver.Value(x_nationality[h, n])>0][0]
-    smoke = [n for n in categories["cigarettes"] if solver.Value(x_smoke[h, n])>0][0]
-    pet = [n for n in categories["pets"] if solver.Value(x_pets[h, n])>0][0]
-    drink = [n for n in categories["drinks"] if solver.Value(x_drink[h, n])>0][0]
+    KOLOR = [c for c in categories["colors"] if solver.Value(x_color[h, c]) > 0][0]
+    national = [n for n in categories["nationalities"] if solver.Value(x_nationality[h, n]) > 0][0]
+    smoke = [n for n in categories["cigarettes"] if solver.Value(x_smoke[h, n]) > 0][0]
+    pet = [n for n in categories["pets"] if solver.Value(x_pets[h, n]) > 0][0]
+    drink = [n for n in categories["drinks"] if solver.Value(x_drink[h, n]) > 0][0]
 
     print(f"{h}  {KOLOR} {national} {smoke} {pet} {drink}")

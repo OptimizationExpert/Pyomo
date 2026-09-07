@@ -1,6 +1,7 @@
 # data is taken from this repo https://github.com/ctbo/slitherlink
 import matplotlib.pyplot as plt
 from ortools.sat.python import cp_model  # CP-SAT solver
+
 from base import Node, Cell
 from tools import make_data, neighbour
 
@@ -48,7 +49,7 @@ drones = [d for d in range(Ndr)]
 depot_ids = [1, 13, 7]
 depot_ids = [1, 32, 17]
 
-#depot_ids = [1, 295, 613, 300, 200]
+# depot_ids = [1, 295, 613, 300, 200]
 # depot_ids = [1, 295, 613]
 
 # depots = [n for i, n in node_by_id.items() if i in depot_ids]
@@ -98,7 +99,7 @@ for cell in cells_all:
 
 for dr in drones:
     expr = [selected[d, dr] for d in depot_ids]
-    model.add(sum(expr)>= drone_used[dr])
+    model.add(sum(expr) >= drone_used[dr])
 
     arcs = [(i, j, v) for (i, j, ddr), v in U.items() if ddr == dr] + [(i, i, v.Not()) for (i, ddr), v in
                                                                        selected.items() if ddr == dr]

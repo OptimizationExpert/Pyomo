@@ -5,11 +5,11 @@ The Tower Puzzle:
 data and some functions related to data is taken from https://github.com/niloufarmtd/Skyscraper-Puzzle-Solver
 is a classic Japanese-style logic puzzle where you fill an N×N grid with buildings of varying heights, using only the edge clues and pure deduction — no guessing required. Every row and every column contains each height from 1 to N exactly once, and the numbers around the perimeter tell you how many buildings are visible from that side.
 """
+import re
+
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Rectangle
-import re
-
 from ortools.sat.python import cp_model
 
 PUZZLE = """
@@ -33,7 +33,7 @@ PUZZLE = """
 2 [2, 1, 3] 1
    2  3  1"""
 
-#PUZZLE =
+# PUZZLE =
 """3  2  1  2
 3 [1, 3, 4, 2] 2
 2 [3, 1, 2, 4] 1
@@ -97,7 +97,7 @@ class VarArraySolutionPrinter(cp_model.CpSolverSolutionCallback):
         self._solution_count += 1
         self.last = {c: self.value(v) for c, v in self._variables.items()}
         print(f"--- solution {self._solution_count} ---")
-        #for c, v in self._variables.items():
+        # for c, v in self._variables.items():
         #    print(f"{c}={self.value(v)}", end=" ")
         self.collector[self._solution_count] = self.last
         print()

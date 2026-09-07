@@ -7,8 +7,8 @@ A calculator, initially displaying 0, has only two buttons: ”+” adds 1 to th
 
 What is the least number of button presses needed to show 5034? And how would you make sure your solution is actually optimal, not just a good guess? (Puzzle courtesy of Hakan Kjellerstrand.)
 """
-from ortools.sat.python import cp_model  # CP-SAT solver
 import matplotlib.pyplot as plt
+from ortools.sat.python import cp_model  # CP-SAT solver
 
 
 def min_ops_sequence(target):

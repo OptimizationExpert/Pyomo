@@ -71,8 +71,8 @@ def viz(counter, values, x_st, x_size, x_fn, y_st, y_size, y_fn):
         ax.add_patch(
             Rectangle((x0, y0), xl, yl, linewidth=1, edgecolor='k', facecolor=KOLORS[i - 1], alpha=1))
         xr, yr = cc - 0.5, N - rr + 1 - 0.5
-        #ax.text(xr - 0.2, yr - 0.2, s=str(i))
-        #ax.scatter(xr, yr, s=100, c='k', zorder=2)
+        # ax.text(xr - 0.2, yr - 0.2, s=str(i))
+        # ax.scatter(xr, yr, s=100, c='k', zorder=2)
 
     ax.set_xlim(0, N)
     ax.set_ylim(0, N)
@@ -83,6 +83,7 @@ def viz(counter, values, x_st, x_size, x_fn, y_st, y_size, y_fn):
 
     fig.savefig(f"figure {counter}.png")
     plt.close(fig)
+
 
 class VarArraySolutionPrinter(cp_model.CpSolverSolutionCallback):
     """Print intermediate solutions."""
@@ -108,16 +109,17 @@ class VarArraySolutionPrinter(cp_model.CpSolverSolutionCallback):
     def solution_count(self) -> int:
         return self.__solution_count
 
+
 model = cp_model.CpModel()
 
 u = {c: model.new_bool_var(f"u_{c}") for c in cells}
 x = {(c, i): model.new_bool_var(f"x_{c}_{i}") for c in cells
      for i in rects}
-x_st = {i: model.new_int_var(0, N-1, f"xst_{i}") for i in rects}
+x_st = {i: model.new_int_var(0, N - 1, f"xst_{i}") for i in rects}
 x_size = {i: model.new_int_var(1, N, f"xsize_{i}") for i in rects}
 x_fn = {i: model.new_int_var(1, N, f"xfn_{i}") for i in rects}
 
-y_st = {i: model.new_int_var(0, N-1, f"yst_{i}") for i in rects}
+y_st = {i: model.new_int_var(0, N - 1, f"yst_{i}") for i in rects}
 y_size = {i: model.new_int_var(1, N, f"ysize_{i}") for i in rects}
 y_fn = {i: model.new_int_var(1, N, f"yfn_{i}") for i in rects}
 
@@ -143,30 +145,27 @@ for i in rects:
         model.add(sum(expr) == dic_data["value"])
     for c in cells:
         (rr, cc) = cells[c]
-        xm,ym = cc,N-rr+1
-        print((rr,cc),'-------->',(xm,ym))
+        xm, ym = cc, N - rr + 1
+        print((rr, cc), '-------->', (xm, ym))
         model.add(ym <= y_fn[i]).only_enforce_if(x[c, i])
-        model.add(ym-1 >= y_st[i]).only_enforce_if(x[c, i])
+        model.add(ym - 1 >= y_st[i]).only_enforce_if(x[c, i])
         model.add(xm <= x_fn[i]).only_enforce_if(x[c, i])
-        model.add(xm-1 >= x_st[i]).only_enforce_if(x[c, i])
+        model.add(xm - 1 >= x_st[i]).only_enforce_if(x[c, i])
 
     if dic_data["shape"] == "tall_rectangle":
-       model.add(y_size[i]>x_size[i])
-       print('TAG1',i,dic_data["value"])
+        model.add(y_size[i] > x_size[i])
+        print('TAG1', i, dic_data["value"])
     elif dic_data["shape"] == "wide_rectangle":
-       model.add(y_size[i]<x_size[i])
-       print('TAG2',i,dic_data["value"])
+        model.add(y_size[i] < x_size[i])
+        print('TAG2', i, dic_data["value"])
 
     elif dic_data["shape"] == "square":
-       model.add(y_size[i]==x_size[i])
-
-
+        model.add(y_size[i] == x_size[i])
 
 model.add_no_overlap_2d(xintervals_list, yintervals_list)
 
 solver = cp_model.CpSolver()
-solution_printer = VarArraySolutionPrinter(x_st,x_size,x_fn,y_st,y_size,y_fn)
+solution_printer = VarArraySolutionPrinter(x_st, x_size, x_fn, y_st, y_size, y_fn)
 
-results = solver.Solve(model,solution_printer)
+results = solver.Solve(model, solution_printer)
 print(solver.status_name(results))
-

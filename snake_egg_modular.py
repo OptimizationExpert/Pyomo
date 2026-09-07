@@ -10,9 +10,10 @@ Sizes: These groups match a precise set of sizes sequentially
 (such as one of each size from 1 to N-1 in standard large grids).
 """
 
+import random
+
 import matplotlib.pyplot as plt
 from ortools.sat.python import cp_model
-import random
 
 st, fn, N = 98, 58, 10
 st, fn, N = 98, 58, 10
@@ -29,11 +30,14 @@ def create_grid(N):
             grid[c] = (i, j)
     return grid
 
+
 grid = create_grid(N)
 nodes = [c for c in grid.keys()]
 connect = {(c1, c2) for c1 in nodes for c2 in nodes if
            abs(grid[c1][0] - grid[c2][0]) + abs(grid[c1][1] - grid[c2][1]) == 1}
-def opt_model(st, fn, N ):
+
+
+def opt_model(st, fn, N):
     model = cp_model.CpModel()
     solver = cp_model.CpSolver()
     numbers = [n for n in range(N)]
@@ -85,10 +89,10 @@ def opt_model(st, fn, N ):
 
     status = solver.Solve(model)
     print(solver.status_name(status))
-    return U,cell_assign,source_n,numbers, solver,status
+    return U, cell_assign, source_n, numbers, solver, status
 
 
-def visualize(U,cell_assign,source_n,numbers, solver):
+def visualize(U, cell_assign, source_n, numbers, solver):
     KOLOR = ['grey', 'red', 'blue', 'green', 'gold', 'brown',
              'dodgerblue', 'cyan', 'magenta', 'orange', 'purple', 'black']
     fig, ax = plt.subplots(figsize=(5, 5))
@@ -120,12 +124,13 @@ def visualize(U,cell_assign,source_n,numbers, solver):
     plt.savefig(f"square{fn}-{st}.png")
     plt.show()
 
-seen=[]
+
+seen = []
 for r in range(100):
-    (st,fn)=random.sample(range(1, 1 + N**2), 2)
-    if (st,fn) not in seen and (fn,st) not in seen:
-        print(st,fn)
-        seen.append((st,fn))
-        U,cell_assign,source_n,numbers, solver,status = opt_model(st, fn, N)
+    (st, fn) = random.sample(range(1, 1 + N ** 2), 2)
+    if (st, fn) not in seen and (fn, st) not in seen:
+        print(st, fn)
+        seen.append((st, fn))
+        U, cell_assign, source_n, numbers, solver, status = opt_model(st, fn, N)
         if solver.status_name(status) == 'OPTIMAL':
-            visualize(U,cell_assign,source_n,numbers, solver)
+            visualize(U, cell_assign, source_n, numbers, solver)

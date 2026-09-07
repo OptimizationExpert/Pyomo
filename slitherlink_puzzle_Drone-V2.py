@@ -1,6 +1,7 @@
 # data is taken from this repo https://github.com/ctbo/slitherlink
 import matplotlib.pyplot as plt
 from ortools.sat.python import cp_model  # CP-SAT solver
+
 from base import Node, Cell
 from tools import make_data, neighbour
 
@@ -48,7 +49,7 @@ drones = [d for d in range(Ndr)]
 depot_ids = [1, 13, 7]
 depot_ids = [1, 100, 300]
 
-#depot_ids = [1, 295, 613, 300, 200]
+# depot_ids = [1, 295, 613, 300, 200]
 # depot_ids = [1, 295, 613]
 
 # depots = [n for i, n in node_by_id.items() if i in depot_ids]
@@ -72,7 +73,8 @@ for c in cells_all:
 model = cp_model.CpModel()
 solver = cp_model.CpSolver()
 
-U = {(i.name, j.name, dr): model.new_bool_var(f"connection_{i.name}_{j.name}_{dr}") for i in nodes_all for j in nodes_all
+U = {(i.name, j.name, dr): model.new_bool_var(f"connection_{i.name}_{j.name}_{dr}") for i in nodes_all for j in
+     nodes_all
      for dr in drones if
      neighbour(i, j)}
 selected = {(i.name, dr): model.new_bool_var(f"select_{i.name}_{dr}") for i in nodes_all for dr in drones}
@@ -98,18 +100,18 @@ for cell in cells_all:
 
 for dr in drones:
     expr = [selected[d, dr] for d in depot_ids]
-    model.add(sum(expr)>= drone_used[dr])
-    #model.add(sum(expr)<= drone_used[dr]*len(depot_ids))
+    model.add(sum(expr) >= drone_used[dr])
+    # model.add(sum(expr)<= drone_used[dr]*len(depot_ids))
 
     arcs = [(i, j, v) for (i, j, ddr), v in U.items() if ddr == dr] + [(i, i, v.Not()) for (i, ddr), v in
-                                           selected.items() if ddr == dr]
+                                                                       selected.items() if ddr == dr]
     model.add_circuit(arcs)
     travelled_arcs = [v for (i, j, ddr), v in U.items() if ddr == dr]
-    model.add( cp_model.LinearExpr.sum(travelled_arcs) <= 360*drone_used[dr])
+    model.add(cp_model.LinearExpr.sum(travelled_arcs) <= 360 * drone_used[dr])
 for cell in cells_all:
     for dr in drones:
         nodes_in_cell = [n.name for n in cell.nodes]
-        #around_expr = [v for (i, j, ddr), v in U.items() if i in nodes_in_cell and j in nodes_in_cell and ddr == dr]
+        # around_expr = [v for (i, j, ddr), v in U.items() if i in nodes_in_cell and j in nodes_in_cell and ddr == dr]
         around_expr = [v for (i, ddr), v in selected.items() if i in nodes_in_cell and ddr == dr]
         if cell.value is not None:
             # print('XXXX', cell.name, cell.value, len(around_expr),nodes_in_cell)
@@ -119,11 +121,10 @@ for cell in cells_all:
 solver.parameters.max_time_in_seconds = 200
 solver.parameters.log_search_progress = False
 expressions = [v for (i, j, dr), v in U.items()]
-#model.minimize(cp_model.LinearExpr.sum(expressions))
+# model.minimize(cp_model.LinearExpr.sum(expressions))
 
 status = solver.Solve(model)
 print(solver.status_name(status), solver.objective_value)
-
 
 for (i, j, dr), v in U.items():
     if i > j:

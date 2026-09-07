@@ -1,6 +1,7 @@
 # data is taken from this repo https://github.com/ctbo/slitherlink
 import matplotlib.pyplot as plt
 from ortools.sat.python import cp_model  # CP-SAT solver
+
 from base import Node, Cell
 from tools import make_data, dist, neighbour
 
@@ -13,7 +14,7 @@ Solved by alireza.soroudi@gmail.com
 
 file_name = "test5.txt"
 file_name = "test30x45.txt"
-#file_name = "test30x20.txt"
+# file_name = "test30x20.txt"
 with open(file_name, "r") as f:
     puzzle_text = f.read().strip()  # keeps newlines, removes leading/trailing whitespace
 

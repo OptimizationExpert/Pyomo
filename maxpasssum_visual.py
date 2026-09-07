@@ -105,8 +105,6 @@ plt.axis('off')
 plt.tight_layout()
 plt.show()
 
-
-
 plt.figure(figsize=(5, 5))
 
 for n, (r, c, v) in dic_data.items():
@@ -126,7 +124,7 @@ for r in rows:
 
             x0, y0 = bias0 + c0, rowmax - r0
             x1, y1 = bias1 + c1, rowmax - r1
-            if r0==r:
+            if r0 == r:
                 plt.plot([x0, x1], [y0, y1], lw=3, color='r', zorder=1)
                 plt.savefig(f"row {r}.png")
 plt.show()

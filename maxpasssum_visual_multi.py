@@ -85,8 +85,8 @@ def opt_path(direction: int, minlim: int, maxlim: int):
     elif direction < 0:
         model.minimize(sum(expr))
     else:
-        model.add( cp_model.LinearExpr.Sum(expr) <= int(0.8*maxlim))
-        model.add(cp_model.LinearExpr.Sum(expr) >= int(1.5*minlim) )
+        model.add(cp_model.LinearExpr.Sum(expr) <= int(0.8 * maxlim))
+        model.add(cp_model.LinearExpr.Sum(expr) >= int(1.5 * minlim))
 
     solver = cp_model.CpSolver()
     results = solver.Solve(model)
@@ -128,7 +128,7 @@ for r in rows:
         x1, y1 = bias1 + c1, rowmax - r1
         if r0 == r:
             plt.plot([x0, x1], [y0, y1], lw=3, color='r', zorder=1)
-        if r == r0 == rowmax-1:
+        if r == r0 == rowmax - 1:
             plt.plot([x0, x1], [y0, y1], lw=3, color='r', zorder=1, label='max')
     for (i, j) in xn:
         r0, c0, v0 = dic_data[i]
@@ -140,7 +140,7 @@ for r in rows:
         x1, y1 = bias1 + c1, rowmax - r1
         if r0 == r:
             plt.plot([x0, x1], [y0, y1], lw=3, color='g', zorder=1)
-        if r == r0 == rowmax-1:
+        if r == r0 == rowmax - 1:
             plt.plot([x0, x1], [y0, y1], lw=3, color='g', zorder=1, label='min')
     for (i, j) in xr:
         r0, c0, v0 = dic_data[i]
@@ -152,7 +152,7 @@ for r in rows:
         x1, y1 = bias1 + c1, rowmax - r1
         if r0 == r:
             plt.plot([x0, x1], [y0, y1], lw=3, color='gold', zorder=1)
-        if r == r0 == rowmax-1:
+        if r == r0 == rowmax - 1:
             print(i)
             plt.plot([x0, x1], [y0, y1], lw=3, color='gold', zorder=1, label='random')
 

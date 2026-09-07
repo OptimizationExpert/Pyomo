@@ -8,11 +8,9 @@
  Contact     : https://t.me/pypyid
 ================================================================================
 """
-import matplotlib
-from ortools.sat.python import cp_model
-
 from matplotlib import pyplot as plt
 from matplotlib.patches import Rectangle
+from ortools.sat.python import cp_model
 
 KOLORS = ["#7f7f7f", "#bcbd22", "#17becf",
           "#aec7e8", "#ffbb78", "#98df8a", "#ff9896", "#c5b0d5",

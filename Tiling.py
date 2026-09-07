@@ -122,10 +122,10 @@ plt.xticks([])
 plt.yticks([])
 plt.tight_layout()
 plt.savefig("Tiling_0.png")
-for ss in range(1,11):
+for ss in range(1, 11):
 
     for (i, j, s), v in u.items():
-        if solver.value(v) > 0 and s==ss:
+        if solver.value(v) > 0 and s == ss:
             (x0, y0, v0) = nodes[i]
             (x1, y1, v1) = nodes[j]
             rect1 = Rectangle(
