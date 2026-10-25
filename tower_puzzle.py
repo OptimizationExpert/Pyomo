@@ -4,6 +4,7 @@ alireza.soroudi@gmail.com
 The Tower Puzzle:
 data and some functions related to data is taken from https://github.com/niloufarmtd/Skyscraper-Puzzle-Solver
 is a classic Japanese-style logic puzzle where you fill an N×N grid with buildings of varying heights, using only the edge clues and pure deduction — no guessing required. Every row and every column contains each height from 1 to N exactly once, and the numbers around the perimeter tell you how many buildings are visible from that side.
+Udemy course discount coupon : https://www.udemy.com/course/ortools-course/?couponCode=DISCOUNT_ORTOOLS
 """
 
 import re

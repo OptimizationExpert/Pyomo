@@ -4,7 +4,7 @@ Constraint programming in ORTools
 alireza.soroudi@gmail.com
 puzzle source: project 18,67
 https://projecteuler.net/problem=67
-
+Udemy course discount coupon : https://www.udemy.com/course/ortools-course/?couponCode=DISCOUNT_ORTOOLS
 """
 from matplotlib import pyplot as plt
 from ortools.sat.python import cp_model

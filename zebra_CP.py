@@ -7,6 +7,7 @@
  Developed by: Dr. Alireza Soroudi
  Website     : https://optexpert.org/
  Contact     : https://t.me/pypyid
+ Udemy course discount Coupon : https://www.udemy.com/course/ortools-course/?couponCode=DISCOUNT_ORTOOLS
 ================================================================================
 """
 from ortools.sat.python import cp_model

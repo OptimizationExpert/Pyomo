@@ -4,7 +4,7 @@ alireza.soroudi@gmail.com
 optexpert.org
 The puzzle is taken from : https://dmcommunity.org/challenges/2020-11-calculator-two-buttons/
 A calculator, initially displaying 0, has only two buttons: ”+” adds 1 to the number on display, and ”×” multiplies the number on display by 10.
-
+Udemy course discount Coupon : https://www.udemy.com/course/ortools-course/?couponCode=DISCOUNT_ORTOOLS
 What is the least number of button presses needed to show 5034? And how would you make sure your solution is actually optimal, not just a good guess? (Puzzle courtesy of Hakan Kjellerstrand.)
 """
 import matplotlib.pyplot as plt
