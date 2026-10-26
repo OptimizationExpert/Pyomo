@@ -1,9 +1,12 @@
 """
 ================================================================================
  Title       : Simple CP Model
- Description : This OT-Tools code solves the PMU allocation
+ Description : This OR-Tools code solves the PMU allocation
  https://www.linkedin.com/pulse/cp-meets-power-grid-pmu-allocation-alireza-soroudi-phd-ewwmf/
- 
+
+A power system is observable when the voltage magnitude and angle are known at every bus.
+A PMU measures the voltage at its own bus and the currents on its connected lines, so it observes that bus and all its neighbours.
+PMU allocation finds the fewest buses to equip with PMUs so that every bus in the network is observed.
 
  Developed by: Dr. Alireza Soroudi
  Website     : https://optexpert.org/
