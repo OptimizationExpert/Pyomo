@@ -2,12 +2,14 @@
 ================================================================================
  Title       : Simple CP Model
  Description : This OT-Tools code solves the PMU allocation
+ https://www.linkedin.com/pulse/cp-meets-power-grid-pmu-allocation-alireza-soroudi-phd-ewwmf/
+ 
 
  Developed by: Dr. Alireza Soroudi
  Website     : https://optexpert.org/
  Contact     : https://t.me/pypyid
  Udemy course discount Coupon : https://www.udemy.com/course/ortools-course/?couponCode=DISCOUNT_ORTOOLS
- Power System Optimization Course: https://optexpert.org/courses/advanced-power-system/ 
+ Power System Optimization Course: https://optexpert.org/courses/advanced-power-system/
 ================================================================================
 """
 from ortools.sat.python import cp_model
