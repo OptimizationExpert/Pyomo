@@ -1,6 +1,6 @@
 """
 ================================================================================
- Title       : Simple CP Model
+ Title       : PMU Allocation CP-Model
  Description : This OR-Tools code solves the PMU allocation
  https://www.linkedin.com/pulse/cp-meets-power-grid-pmu-allocation-alireza-soroudi-phd-ewwmf/
 
