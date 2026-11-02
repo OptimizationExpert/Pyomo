@@ -278,7 +278,10 @@ Open any notebook with its **Open in Colab** badge, or start from
 | 🌐 Website | [optexpert.org](https://optexpert.org) |
 | 📰 LinkedIn newsletter | [Optimization in Open Source](https://www.linkedin.com/newsletters/optimization-in-open-source-6874020019009859585/) |
 | 💬 Telegram | [t.me/PyomoChannel](https://t.me/PyomoChannel) |
-| 🎓 Udemy course | [Optimization in Python](https://www.udemy.com/course/optimization-in-python/?couponCode=36C6F6B228A087695AD9) |
+| 🎓 Udemy course | [Pyomo Bootcamp: Python Optimization from Beginner to Advanced](https://www.udemy.com/course/optimization-in-python/?couponCode=PYOMONOV26) |
+| 🎓 Udemy course | [Power System Optimization in GAMS](https://www.udemy.com/course/powersystemopt/?couponCode=GAMSPOWERNOV26) |
+| 🎓 Udemy course | [Power System Optimization in Pyomo](https://www.udemy.com/course/power-system-optimization-in-pyomo-p1/?couponCode=PYOMOPOWERNOV26) |
+| 🎓 Udemy course | [Google OR-Tools in Python](https://www.udemy.com/course/ortools-course/?couponCode=ORTOOLSNOV26) |
 | 👤 LinkedIn | [Alireza Soroudi](https://www.linkedin.com/in/soroudi/) |
 
 ---
